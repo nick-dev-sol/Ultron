@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+openai
+duckduckgo_search
+edge-tts
+pydantic

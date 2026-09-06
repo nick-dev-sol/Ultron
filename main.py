@@ -985,8 +985,9 @@ async def speak_endpoint(payload: SpeakRequest):
 
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
     print("=" * 52)
-    print("    ULTRON CORE SYSTEM v11.0 (OPENROUTER FREE)  ")
+    print("    ULTRON CORE SYSTEM v11.1 (RENDER 24/7 CLOUD)  ")
     print("=" * 52)
-    print("🚀 OpenRouter Free-Router OS active! Open your browser at: http://127.0.0.1:8000 ...\n")
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    print(f"🚀 Cloud Gateway active on port {port} ...\n")
+    uvicorn.run("main:app", host="0.0.0.0", port=port)
